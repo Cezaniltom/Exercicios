@@ -1,0 +1,19 @@
+# Dependências (sempre ignore a node_modules)
+node_modules/
+
+# Builds e saídas de compilação
+dist/
+build/
+.next/
+
+# Variáveis de ambiente (Segurança)
+.env
+*.local
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema ou editores
+.vscode/
+.DS_Store
