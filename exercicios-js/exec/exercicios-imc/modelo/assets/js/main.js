@@ -22,6 +22,16 @@ formulario.addEventListener('submit', (e) => {
 
     const peso = Number(inputPeso.value)
     const altura = Number(inputAltura.value)
+    
+    if(peso !== Number) {
+        console.log("Peso invalido")
+    }
+
+    if(altura !== Number) {
+        console.log("Altura invalida")
+    }
+
+    
 })
 
 
@@ -29,11 +39,15 @@ const setResultado = () => {
     
 }
 
-// const imcCategoria = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3']
 
-// if(imcCategoria < 18.5) { return imcCategoria[0]}
-// if(imcCategoria >= 18.5 && imcCategoria <= 24.9) { return imcCategoria[1]}
-// if(imcCategoria >= 25 && imcCategoria <= 29.9) { return imcCategoria[2]}
-// if(imcCategoria >= 30 && imcCategoria <= 34.9) { return imcCategoria[3]}
-// if(imcCategoria >= 35 && imcCategoria <= 39.9) { return imcCategoria[4]}
-// if(imcCategoria > 39.9) { return imcCategoria[5]}
+const getNivelImc = (imc) => {
+    const imcCategoria = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2', 'Obesidade grau 3']
+
+    if(imc < 18.5) { return imcCategoria[0]}
+    if(imc >= 18.5 && imc <= 24.9) { return imcCategoria[1]}
+    if(imc >= 25 && imc <= 29.9) { return imcCategoria[2]}
+    if(imc >= 30 && imc <= 34.9) { return imcCategoria[3]}
+    if(imc >= 35 && imc <= 39.9) { return imcCategoria[4]}
+    if(imc > 39.9) { return imcCategoria[5]}
+}
+
