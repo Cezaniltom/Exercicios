@@ -44,7 +44,7 @@ function getImc (peso, altura) {
   return imc.toFixed(2);
 }
 
-function criaP () {
+function criaP() {
   const p = document.createElement('p');
   return p;
 }

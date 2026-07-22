@@ -1,5 +1,7 @@
 // Capturar o peso e altura
 
+const { createContext, createElement } = require("react")
+
 // Validar se o valo inserido é do tipo number
 // Informar o resultado do IMC para o usuário
 
@@ -23,21 +25,16 @@ formulario.addEventListener('submit', (e) => {
     const peso = Number(inputPeso.value)
     const altura = Number(inputAltura.value)
     
-    if(peso !== Number) {
+    if(!peso) {
         console.log("Peso invalido")
     }
 
-    if(altura !== Number) {
+    if(!altura) {
         console.log("Altura invalida")
     }
 
     
 })
-
-
-const setResultado = () => {
-    
-}
 
 
 const getNivelImc = (imc) => {
