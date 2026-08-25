@@ -1,0 +1,1 @@
+Para criar um buscador de posição do array e remover o item indicado, basta utilizar o indexOf() que faz a busca de acordo com a posição do item no array, e removo utilizando o splice(posição, quantidade)
