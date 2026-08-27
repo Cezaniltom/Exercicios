@@ -1,9 +1,15 @@
-import { Heading } from './components/Heading'
+import { Heading } from './components/heading/Heading'
 import './styles/global.css'
 import './styles/theme.css'
 
 export function App() {
-  return <div>
-    <Heading />
-  </div>
+  return <>
+    <Heading
+      header={<h2>Teste 1</h2>}
+    >
+      <header>{<h2>Teste 2</h2>}</header>
+      <header>{<h2>Teste 3</h2>}</header>
+      <header>{<h2>Aviso</h2>}</header>
+    </Heading>
+  </>
 }
