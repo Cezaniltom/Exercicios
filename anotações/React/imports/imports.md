@@ -1,10 +1,10 @@
-# ⚛️ React & JavaScript: Guia de Imports, Exports e Regras JSX
+# React & JavaScript: Guia de Imports, Exports e Regras JSX
 
 Este documento serve como um guia rápido e prático sobre as diferentes formas de trabalhar com módulos (Imports/Exports) no JavaScript aplicados ao ecossistema React, além de regras fundamentais para a escrita de código JSX.
 
 ---
 
-## 📦 1. Tipos de Exportação e Importação
+## 1. Tipos de Exportação e Importação
 
 ### 1.1. Default Export (Exportação Padrão)
 **Quando usar:** Ideal para quando o arquivo tem uma **única responsabilidade** principal (ex: um componente React principal) ou quando se deseja exportar uma classe grande.
@@ -99,7 +99,7 @@ import * as operacoesMatematicas from './operacoes';
 
 ---
 
-## 🎨 2. Regras Essenciais de JSX no React
+## 2. Regras Essenciais de JSX no React
 
 A sintaxe JSX permite escrever código semelhante a HTML dentro do JavaScript, mas possui regras estritas de compilação.
 
