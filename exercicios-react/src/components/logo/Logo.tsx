@@ -4,7 +4,7 @@ import { TimerIcon } from 'lucide-react'
 export function Logo() {
     return (
         <div className={styles.logo}>
-            <a href="#">
+            <a className={styles.logoLink} href="#">
                 <TimerIcon />
                 <span>Teste</span>
             </a>
