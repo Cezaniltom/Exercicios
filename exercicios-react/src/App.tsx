@@ -23,16 +23,16 @@ export function App() {
       </Container>
       <Container>
         <Menu>
-          <MenuItens href={'/house'}>
+          <MenuItens href='/house' title='house'>
             <HouseIcon />
           </MenuItens>
-          <MenuItens href={'/history'}>
+          <MenuItens href='/history' title='history'>
             <HistoryIcon />
           </MenuItens>
-          <MenuItens href={'/settings'}>
+          <MenuItens href='/settings' title='settings'>
             <SettingsIcon />
           </MenuItens>
-          <MenuItens href={'/sun'}>
+          <MenuItens href='/sun' title='sun'>
             <SunIcon />
           </MenuItens>
         </Menu>
