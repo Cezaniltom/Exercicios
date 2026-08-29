@@ -1,21 +1,14 @@
+import { type ReactNode } from 'react'
 import styles from './Menu.module.css'
-import { SunIcon, HouseIcon, HistoryIcon, SettingsIcon } from 'lucide-react'
 
-export function Menu() {
+interface MenuProps {
+    children: ReactNode
+}
+
+export function Menu({children}: MenuProps) {
     return (
         <nav className={styles.menu}>
-            <a className={styles.menuLink} href="#">
-                <HouseIcon />
-            </a>
-            <a className={styles.menuLink} href="#">
-                <HistoryIcon />
-            </a>
-            <a className={styles.menuLink} href="#">
-                <SettingsIcon />
-            </a>
-            <a className={styles.menuLink} href="#">
-                <SunIcon />
-            </a>
+            {children}
         </nav>
     )
 }

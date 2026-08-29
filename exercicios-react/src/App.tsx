@@ -1,7 +1,9 @@
 // import { Heading } from './components/heading/Heading'
+import { HouseIcon, HistoryIcon, SettingsIcon, SunIcon } from 'lucide-react'
 import { Container  } from './components/container/Container'
 import { Logo } from './components/logo/Logo'
 import { Menu } from './components/menu/Menu'
+import { MenuItens } from './components/menuItens/MenuItens'
 import './styles/global.css'
 import './styles/theme.css'
 
@@ -20,7 +22,20 @@ export function App() {
         <Logo />
       </Container>
       <Container>
-        <Menu />
+        <Menu>
+          <MenuItens href={'/house'}>
+            <HouseIcon />
+          </MenuItens>
+          <MenuItens href={'/history'}>
+            <HistoryIcon />
+          </MenuItens>
+          <MenuItens href={'/settings'}>
+            <SettingsIcon />
+          </MenuItens>
+          <MenuItens href={'/sun'}>
+            <SunIcon />
+          </MenuItens>
+        </Menu>
       </Container>
       <Container>
         <section>FORM</section>
