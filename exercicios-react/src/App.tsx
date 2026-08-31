@@ -7,6 +7,7 @@ import { MenuItens } from './components/menuItens/MenuItens'
 import './styles/global.css'
 import './styles/theme.css'
 import { CountDown } from './components/countDown/CountDown'
+import { FormContainer } from './components/forms/Forms'
 
 export function App() {
   return(
@@ -42,7 +43,9 @@ export function App() {
         <CountDown />
       </Container>
       <Container>
-        <section>FORM</section>
+        <FormContainer>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ea, atque voluptatibus voluptas voluptatum, exercitationem optio, laudantium at beatae explicabo esse praesentium fugiat inventore. Totam magni quaerat quod incidunt eos!</p>
+        </FormContainer>
       </Container>
     </>
 )}
