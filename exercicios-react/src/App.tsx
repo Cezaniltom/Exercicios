@@ -6,6 +6,7 @@ import { Menu } from './components/menu/Menu'
 import { MenuItens } from './components/menuItens/MenuItens'
 import './styles/global.css'
 import './styles/theme.css'
+import { CountDown } from './components/countDown/CountDown'
 
 export function App() {
   return(
@@ -36,6 +37,9 @@ export function App() {
             <SunIcon />
           </MenuItens>
         </Menu>
+      </Container>
+      <Container>
+        <CountDown />
       </Container>
       <Container>
         <section>FORM</section>

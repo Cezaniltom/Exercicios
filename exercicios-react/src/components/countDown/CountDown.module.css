@@ -1,0 +1,9 @@
+.container {
+    text-align: center;
+    font-size: clamp(8rem, 30vw, 16rem);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* Clamp permite ajustar o valor minimo e maximo da fonte de acordo com o tamanho da tela */
