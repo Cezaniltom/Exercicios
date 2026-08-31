@@ -8,6 +8,7 @@ import './styles/global.css'
 import './styles/theme.css'
 import { CountDown } from './components/countDown/CountDown'
 import { FormContainer } from './components/forms/Forms'
+import { InputForm } from './components/inputForm/InputForm'
 
 export function App() {
   return(
@@ -44,7 +45,11 @@ export function App() {
       </Container>
       <Container>
         <FormContainer>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ea, atque voluptatibus voluptas voluptatum, exercitationem optio, laudantium at beatae explicabo esse praesentium fugiat inventore. Totam magni quaerat quod incidunt eos!</p>
+          <InputForm name={'Nome'} label={'Nome'} type={'text'} />
+          <InputForm name={'Senha'} label={'Senha'} type={'password'} />
+          <InputForm name={'Email'} label={'Email'} type={'email'} />
+          <InputForm name={'Anexo'} label={'Anexo'} type={'file'} />
+          <InputForm name={'Enviar'} label={'Enviar'} type={'submit'} />
         </FormContainer>
       </Container>
     </>

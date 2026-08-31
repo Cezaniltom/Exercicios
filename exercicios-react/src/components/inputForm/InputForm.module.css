@@ -1,0 +1,13 @@
+.label {
+    color: cyan;
+}
+
+.inputField {
+    background-color: white;
+    width: 20rem;
+}
+
+input {
+    height: 4rem;
+    font-size: 1.4rem;
+}
