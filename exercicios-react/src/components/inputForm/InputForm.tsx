@@ -1,18 +1,16 @@
 import styles from './InputForm.module.css'
 
-interface InputFormProps {
+type InputFormProps = {
     name: string
-    label: string
+    label?: string
     type: string
     error?: string
-}
+} & React.ComponentProps<'input'> //Usado para obter todos os resultados de um elemento/atributo
 
 export function InputForm({name, label, type, error}: InputFormProps) {
     return (
         <div>
-            <label htmlFor={name} className={styles.label}>
-                {label}
-            </label>
+            {label ? <label htmlFor={name} className={styles.label}>{label}</label> : ''}
             <input
                 id={name}
                 name={name}
