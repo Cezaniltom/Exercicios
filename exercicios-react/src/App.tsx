@@ -9,17 +9,28 @@ import './styles/theme.css'
 import { CountDown } from './components/countDown/CountDown'
 import { FormContainer } from './components/forms/Forms'
 import { InputForm } from './components/inputForm/InputForm'
+import { useState } from 'react'
+import { Heading } from './components/heading/Heading'
 
 export function App() {
+
+
+  const [numero, setNumero] = useState(0)
+
+  function handleClick() {
+    setNumero(numero + 1)
+  }
+
   return(
     <>
-      {/* <Heading
-        header={<h2>Teste 1</h2>}
+      <Heading
+        header={numero}
       >
-        <header>{<h2>Teste 2</h2>}</header>
+        {/* <header>Numero: {numero}</header>
         <header>{<h2>Teste 3</h2>}</header>
-        <header>{<h2>Aviso</h2>}</header>
-      </Heading> */}
+        <header>{<h2>Aviso</h2>}</header> */}
+        <button onClick={handleClick}>Aumenta</button>
+      </Heading>
 
       <Container>
         <Logo />
@@ -50,6 +61,7 @@ export function App() {
           <InputForm name={'email'} label={'Email'} type={'email'} />
           <InputForm name={'anexo'} label={'Anexo'} type={'file'} />
           <InputForm name={'enviar'} label={''} type={'submit'} />
+          <span>{numero}</span>
         </FormContainer>
       </Container>
     </>
