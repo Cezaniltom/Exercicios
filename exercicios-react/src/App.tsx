@@ -45,11 +45,11 @@ export function App() {
       </Container>
       <Container>
         <FormContainer>
-          <InputForm name={'Nome'} label={'Nome'} type={'text'} />
-          <InputForm name={'Senha'} label={'Senha'} type={'password'} />
-          <InputForm name={'Email'} label={'Email'} type={'email'} />
-          <InputForm name={'Anexo'} label={'Anexo'} type={'file'} />
-          <InputForm name={'Enviar'} label={'Enviar'} type={'submit'} />
+          <InputForm name={'nome'} label={'Nome'} type={'text'} />
+          <InputForm name={'senha'} label={'Senha'} type={'password'} />
+          <InputForm name={'email'} label={'Email'} type={'email'} />
+          <InputForm name={'anexo'} label={'Anexo'} type={'file'} />
+          <InputForm name={'enviar'} label={''} type={'submit'} />
         </FormContainer>
       </Container>
     </>
