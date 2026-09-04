@@ -9,7 +9,7 @@ import './styles/theme.css'
 import { CountDown } from './components/countDown/CountDown'
 import { FormContainer } from './components/forms/Forms'
 import { InputForm } from './components/inputForm/InputForm'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Heading } from './components/heading/Heading'
 
 export function App() {
@@ -20,6 +20,15 @@ export function App() {
   function handleClick() {
     setNumero(numero + 1)
   }
+
+  // Basicamente, o useEffect só irá ser ativado quando o valor da variavel numero for mudado
+  // No exemplo abaixo, o useEffect será ativado no momento em que a variavel número chegar a 100
+  useEffect(() => {
+
+    if(numero === 10) {
+      alert(`useEffect disparado ${numero} vezes`)
+    }
+  }, [numero])
 
   return(
     <>
