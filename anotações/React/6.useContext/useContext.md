@@ -31,3 +31,7 @@ Ele é ideal e recomendado para dados classificados como "globais", tais como:
 *   **Temas Visuais:** O tema Dark/Light (como o que estava sendo feito no componente de Menu). O sistema inteiro precisa ter ciência da paleta de cores atual para estilizar os elementos corretamente.
 *   **Autenticação:** O status da sessão (saber se o usuário está logado), qual é o nome de exibição e os dados do avatar.
 *   **Carrinho de Compras ou Notificações:** Várias partes de uma plataforma precisam acessar e exibir métricas ativas, como a quantidade de itens que o usuário já colocou no carrinho, independentemente da rota em que o usuário se encontra.
+
+## O que é prop drilling?
+
+*É o conceito de transferencia do estado de um componente pai para um componente filho
