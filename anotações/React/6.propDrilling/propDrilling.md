@@ -1,5 +1,3 @@
-# GUIA DEFINITIVO: PROP DRILLING COM TYPESCRIPT
-
 O **Prop Drilling** (Perfuração de Propriedades) é a mecânica nativa e estrutural do React para transitar informações pela sua aplicação. Ele consiste em repassar variáveis de um componente superior (Pai) para os componentes inferiores (Filho, Neto, Bisneto) através de **Props** (propriedades injetadas nas tags dos componentes).
 
 A regra fundamental e imutável do React é: **a informação só desce** pela árvore de componentes.
